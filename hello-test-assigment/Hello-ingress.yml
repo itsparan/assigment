@@ -11,7 +11,7 @@ metadata:
     # kubernetes.io/ingress.class: "alb" (OLD INGRESS CLASS NOTATION - STILL WORKS BUT RECOMMENDED TO USE IngressClass Resource)
     # Ingress Core Settings
     alb.ingress.kubernetes.io/scheme: internet-facing
-    # Health Check Settings
+    # Health Check Settings and status
     alb.ingress.kubernetes.io/healthcheck-protocol: HTTP 
     alb.ingress.kubernetes.io/healthcheck-port: traffic-port
     alb.ingress.kubernetes.io/healthcheck-path: /index.html    
