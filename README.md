@@ -1,4 +1,4 @@
-Step-01: Introduction
+Introduction
 
 Install the minikube to set up kubernetes cluster; follow the link https://kubernetes.io/docs/setup/minikube/#installation
 
@@ -16,7 +16,8 @@ with the hello-world:nanoserver-ltsc2022 image. The container listens on port 80
 and the Pods will have the label app: hello-app-test, which is used to select and identify the Pods
 
 
-STEP-03 Ingress
+ Ingress Rule:-
+
 This YAML file configures an Ingress resource in Kubernetes that uses AWS’s Application Load Balancer (ALB). 
 It specifies health check configurations, defines which AWS ALB will be used, and sets an Ingress class. Traffic that doesn't match other rules will be forwarded to the app3-nginx-nodeport-service.
 The annotations control the AWS ALB’s behavior, such as how it checks the health of services and whether it’s internet-facing.
