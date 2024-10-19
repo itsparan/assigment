@@ -23,7 +23,7 @@ metadata:
 spec:
   defaultBackend:
     service:
-      name: hello-test-nodeport-service
+      name: hello-test-cluster-ip-service
       port:
         number: 80
 
