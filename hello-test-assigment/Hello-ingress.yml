@@ -4,11 +4,11 @@ kind: Ingress
 metadata:
   name: ingress-basics
   labels:
-    app: app3-nginx
+    app: hello-app-test
   annotations:
     # Load Balancer Name
     alb.ingress.kubernetes.io/load-balancer-name: ingress-basics
-    #kubernetes.io/ingress.class: "alb" (OLD INGRESS CLASS NOTATION - STILL WORKS BUT RECOMMENDED TO USE IngressClass Resource) # Additional Notes: https://kubernetes-sigs.github.io/aws-load-balancer-controller/v2.3/guide/ingress/ingress_class/#deprecated-kubernetesioingressclass-annotation
+    # kubernetes.io/ingress.class: "alb" (OLD INGRESS CLASS NOTATION - STILL WORKS BUT RECOMMENDED TO USE IngressClass Resource)
     # Ingress Core Settings
     alb.ingress.kubernetes.io/scheme: internet-facing
     # Health Check Settings
@@ -25,7 +25,7 @@ spec:
     service:
       name: hello-test-nodeport-service
       port:
-        number: 80                  
-      
+        number: 80
 
-# 2. Default Ingress class is nothing but for which ingress class we have the annotation `ingressclass.kubernetes.io/is-default-class: "true"`
+# Optionally, if you want to set a default IngressClass (recommended for newer Kubernetes versions)
+# ingressclass.kubernetes.io/is-default-class: "true"
