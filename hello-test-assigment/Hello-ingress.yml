@@ -2,7 +2,7 @@
 apiVersion: networking.k8s.io/v1
 kind: Ingress
 metadata:
-  name: ingress-basics
+  name: ingress-basics # name of our ingress service
   labels:
     app: hello-app-test
   annotations:

@@ -17,5 +17,6 @@ spec:
       containers:
         - name: hello-app-test
           image: hello-world:nanoserver-ltsc2022
+          #using default docker image for helloword form docker hub:-hello-world:nanoserver-ltsc2022
           ports:
             - containerPort: 80
