@@ -1,6 +1,3 @@
-Kubernetes Deployment, ClusterIP Service, and Ingress Configuration
-This document provides a detailed explanation of a Kubernetes Deployment, ClusterIP Service, and Ingress configuration. These resources work together to deploy a simple application and expose it both internally and externally, depending on the configuration.
-
 Requirements:-
 Before you deploy these resources, ensure the following prerequisites are met:
 1.	Kubernetes Cluster: A functional Kubernetes cluster (e.g., Minikube, GKE, AKS, EKS).
