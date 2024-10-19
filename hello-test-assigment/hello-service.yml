@@ -1,0 +1,14 @@
+apiVersion: test/v1
+kind: Service
+metadata:
+  name: hello-test-nodeport-service
+  labels:
+    app: hello-app-test
+ 
+spec:
+  type: NodePort
+  selector:
+    app: hello-app-test
+  ports:
+    - port: 80
+      targetPort: 80
