@@ -1,22 +1,19 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: hello-test-deployment
-  labels:
-    app: hello-app-test
+  name: web
 spec:
   replicas: 1
   selector:
     matchLabels:
-      app: hello-app-test
+      app: web
   template:
     metadata:
       labels:
-        app: hello-app-test
+        app: web
     spec:
       containers:
-        - name: hello-app-test
-          image: gcr.io/google-samples/hello-app:2.0
-          
-          ports:
-            - containerPort: 8080
+      - name: hello-app
+        image: gcr.io/google-samples/hello-app:1.0
+        ports:
+        - containerPort: 8080

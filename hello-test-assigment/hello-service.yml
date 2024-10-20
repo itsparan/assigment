@@ -1,14 +1,12 @@
 apiVersion: v1
 kind: Service
 metadata:
-  name: hello-test-cluster-ip-service
-  labels:
-    app: hello-app-test
+  name: web
 spec:
-  type: ClusterIP
   selector:
-    app: hello-app-test
+    app: web
   ports:
-    - port: 8080
-      protocol: TCP
+    - protocol: TCP
+      port: 8080
       targetPort: 8080
+  type: NodePort
