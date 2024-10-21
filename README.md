@@ -95,3 +95,10 @@ kubectl delete -f hello-ingress.yml
  ![image](https://github.com/user-attachments/assets/26578cc3-9956-4ce4-ba6b-5f2ba5daaf43)
 
 
+# Kubernetes Hello-World Deployment
+
+This repository contains
+![image](https://github.com/user-attachments/assets/a2218091-3440-4efa-abfb-c306261c746c)
+
+
+
