@@ -82,6 +82,11 @@ Ensure that you have the following tools installed:
     Hostname: web-<pod-identifier>
     ```
 
+A snapshot
+![aaaa](https://github.com/user-attachments/assets/f0d64533-37aa-4ff4-9baf-92ed3ee07958)
+
+4. You should see the following response:
+
 ## Cleanup
 
 To delete the resources created during the setup, use the following command:
@@ -91,11 +96,6 @@ kubectl delete -f hello-deployment.yml
 kubectl delete -f hello-ingress.yml
 kubectl delete -f hello-service.yml
 
-
-## Snapshot
-
-complete snapshot
-![aaaa](https://github.com/user-attachments/assets/8c500c22-230b-4dbd-b65f-26c0bb687882)
 
 
 
