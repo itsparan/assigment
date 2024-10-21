@@ -82,10 +82,9 @@ Ensure that you have the following tools installed:
     Hostname: web-<pod-identifier>
     ```
 
-A snapshot
+A snapshot for seeing fllowing response:
 ![aaaa](https://github.com/user-attachments/assets/f0d64533-37aa-4ff4-9baf-92ed3ee07958)
 
-4. You should see the following response:
 
 ## Cleanup
 
