@@ -89,16 +89,14 @@ To delete the resources created during the setup, use the following command:
 ```bash
 kubectl delete -f hello-deployment.yml
 kubectl delete -f hello-ingress.yml
+kubectl delete -f hello-service.yml
 
 
-5. Snapshot:
- ![image](https://github.com/user-attachments/assets/26578cc3-9956-4ce4-ba6b-5f2ba5daaf43)
+## Snapshot
 
+complete snapshot
+![aaaa](https://github.com/user-attachments/assets/8c500c22-230b-4dbd-b65f-26c0bb687882)
 
-# Kubernetes Hello-World Deployment
-
-This repository contains
-![image](https://github.com/user-attachments/assets/a2218091-3440-4efa-abfb-c306261c746c)
 
 
 
