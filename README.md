@@ -8,10 +8,25 @@ This repository contains a simple example of deploying a Hello-World application
 Ensure that you have the following tools installed:
 
 - [Minikube](https://minikube.sigs.k8s.io/docs/start/)
-- [Kubectl](https://kubernetes.io/docs/tasks/tools/install-kubectl/)
 - [Git](https://git-scm.com/)
+- [Kubectl](https://kubernetes.io/docs/tasks/tools/install-kubectl/) (for interacting with Kubernetes)
+- A Kubernetes cluster running in AWS (Amazon Web Services). You can create this using [EKS](https://docs.aws.amazon.com/eks/latest/userguide/getting-started.html) or [Kops](https://kops.sigs.k8s.io/getting_started/aws/).
+
+## Installation
+# Installing NGINX Ingress Controller on Kubernetes (AWS Provider)
+
+Install NGINX Ingress Controller in a Kubernetes cluster using the AWS provider.
+
+
+### Step: Install the NGINX Ingress Controller
+
+To install the NGINX Ingress Controller, run the following command in your terminal:
+
+```bash
+kubectl apply -f https://raw.githubusercontent.com/kubernetes/ingress-nginx/controller-v1.12.0-beta.0/deploy/static/provider/aws/deploy.yaml
 
 ## Setup
+
 
 1. Clone the repository:
 
@@ -30,7 +45,9 @@ Ensure that you have the following tools installed:
 
     ```bash
     kubectl apply -f hello-deployment.yml
+    kubectl apply -f hello-service.yml
     kubectl apply -f hello-ingress.yml
+    
     ```
 
 4. Verify that the deployment and ingress have been created:
