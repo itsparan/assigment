@@ -31,6 +31,7 @@ Ensure that you have the following tools installed:
 
     ```bash
     kubectl apply -f hello-deployment.yml
+    kubectl apply -f hello-service.yml
     kubectl apply -f hello-ingress.yml
     ```
 
